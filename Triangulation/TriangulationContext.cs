@@ -31,7 +31,7 @@
 
 using System.Collections.Generic;
 
-namespace Poly2Tri {
+namespace Poly2Tri.Unity {
 	public abstract class TriangulationContext {
 		public TriangulationDebugContext DebugContext { get; protected set; }
 

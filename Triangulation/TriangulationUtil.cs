@@ -29,7 +29,7 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace Poly2Tri {
+namespace Poly2Tri.Unity {
 	/**
 	 * @author Thomas Åhlén, thahlen@gmail.com
 	 */
@@ -45,9 +45,9 @@ namespace Poly2Tri {
 		///               / \
 		///              /   \
 		///            b/     \c
-		///            +-------+ 
-		///           /    B    \  
-		///          /           \ 
+		///            +-------+
+		///           /    B    \
+		///          /           \
 		/// </code>
 		///    Facts:
 		///  d has to be in area B to have a chance to be inside the circle formed by a,b and c

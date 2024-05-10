@@ -42,7 +42,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Poly2Tri {
+namespace Poly2Tri.Unity {
 	public class Polygon : Triangulatable {
 		protected List<TriangulationPoint> _points = new List<TriangulationPoint>();
 		protected List<TriangulationPoint> _steinerPoints;
@@ -109,7 +109,7 @@ namespace Poly2Tri {
 		/// <param name="point">The point to insert after in the polygon</param>
 		/// <param name="newPoint">The point to insert into the polygon</param>
 		public void InsertPointAfter( PolygonPoint point, PolygonPoint newPoint ) {
-			// Validate that 
+			// Validate that
 			int index = _points.IndexOf(point);
 			if (index == -1) throw new ArgumentException("Tried to insert a point into a Polygon after a point not belonging to the Polygon", "point");
 			newPoint.Next = point.Next;

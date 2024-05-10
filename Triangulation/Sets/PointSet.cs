@@ -31,7 +31,7 @@
 
 using System.Collections.Generic;
 
-namespace Poly2Tri {
+namespace Poly2Tri.Unity {
 	public class PointSet : Triangulatable {
 		public IList<TriangulationPoint> Points { get; private set; }
 		public IList<DelaunayTriangle> Triangles { get; private set; }

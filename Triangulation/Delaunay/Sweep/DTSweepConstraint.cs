@@ -29,11 +29,11 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace Poly2Tri {
+namespace Poly2Tri.Unity {
 	public class DTSweepConstraint : TriangulationConstraint {
 		/// <summary>
 		/// Give two points in any order. Will always be ordered so
-		/// that q.y > p.y and q.x > p.x if same y value 
+		/// that q.y > p.y and q.x > p.x if same y value
 		/// </summary>
 		public DTSweepConstraint( TriangulationPoint p1, TriangulationPoint p2 ) {
 			P = p1;

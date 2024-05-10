@@ -32,7 +32,7 @@
 /// Changes from the Java version
 ///   Turned DTSweepEdgeEvent into a value type
 
-namespace Poly2Tri {
+namespace Poly2Tri.Unity {
 	public class DTSweepEdgeEvent {
 		public DTSweepConstraint ConstrainedEdge;
 		public bool Right;

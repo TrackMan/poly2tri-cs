@@ -29,14 +29,14 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace Poly2Tri {
+namespace Poly2Tri.Unity {
 	/**
-	 * 
+	 *
 	 * @author Thomas Åhlén, thahlen@gmail.com
 	 *
 	 */
 	public class DTSweepContext : TriangulationContext {
-		// Inital triangle factor, seed triangle will extend 30% of 
+		// Inital triangle factor, seed triangle will extend 30% of
 		// PointSet width to both left and right.
 		private readonly float ALPHA = 0.3f;
 
@@ -139,7 +139,7 @@ namespace Poly2Tri {
 
 
 		/// <summary>
-		/// Try to map a node to all sides of this triangle that don't have 
+		/// Try to map a node to all sides of this triangle that don't have
 		/// a neighbor.
 		/// </summary>
 		public void MapTriangleToNodes( DelaunayTriangle t ) {

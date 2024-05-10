@@ -29,7 +29,7 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace Poly2Tri {
+namespace Poly2Tri.Unity {
 	public static class P2T {
 		private static TriangulationAlgorithm _defaultAlgorithm = TriangulationAlgorithm.DTSweep;
 

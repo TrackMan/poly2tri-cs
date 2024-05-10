@@ -37,7 +37,7 @@
 
 using System.Collections.Generic;
 
-namespace Poly2Tri {
+namespace Poly2Tri.Unity {
 	public class PolygonSet {
 		protected List<Polygon> _polygons = new List<Polygon>();
 

@@ -31,7 +31,7 @@
 
 using System.Collections.Generic;
 
-namespace Poly2Tri {
+namespace Poly2Tri.Unity {
 	public interface Triangulatable {
 		void Prepare(TriangulationContext tcx);
 

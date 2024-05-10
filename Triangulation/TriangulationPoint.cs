@@ -31,7 +31,7 @@
 
 using System.Collections.Generic;
 
-namespace Poly2Tri {
+namespace Poly2Tri.Unity {
 
 	public class TriangulationPoint {
 
@@ -40,7 +40,7 @@ namespace Poly2Tri {
 
 		// This point is not a valid index.
 		public const int INVALID_INDEX = -2;
-		
+
 		// List of edges this point constitutes an upper ending point (CDT)
 		public List<DTSweepConstraint> Edges { get; private set; }
 

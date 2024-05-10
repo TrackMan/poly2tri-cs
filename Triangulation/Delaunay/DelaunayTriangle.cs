@@ -42,7 +42,7 @@ using System;
 using System.Diagnostics;
 using System.Collections.Generic;
 
-namespace Poly2Tri {
+namespace Poly2Tri.Unity {
 	public class DelaunayTriangle {
 		public FixedArray3<TriangulationPoint> Points;
 		public FixedArray3<DelaunayTriangle  > Neighbors;
@@ -99,7 +99,7 @@ namespace Poly2Tri {
 			Debug.Assert(t != this, "self-pointer error");
 			return PointCWFrom(t.PointCWFrom(p));
 		}
-		
+
 		public DelaunayTriangle NeighborCWFrom    (TriangulationPoint point) { return Neighbors[(Points.IndexOf(point)+1)%3]; }
 		public DelaunayTriangle NeighborCCWFrom   (TriangulationPoint point) { return Neighbors[(Points.IndexOf(point)+2)%3]; }
 		public DelaunayTriangle NeighborAcrossFrom(TriangulationPoint point) { return Neighbors[ Points.IndexOf(point)     ]; }

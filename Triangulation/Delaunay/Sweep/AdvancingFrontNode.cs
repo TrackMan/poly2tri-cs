@@ -35,7 +35,7 @@
 /// Future possibilities
 ///   Comments!
 
-namespace Poly2Tri {
+namespace Poly2Tri.Unity {
 	public class AdvancingFrontNode {
 		public AdvancingFrontNode Next;
 		public AdvancingFrontNode Prev;

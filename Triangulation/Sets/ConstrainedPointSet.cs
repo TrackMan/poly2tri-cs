@@ -30,14 +30,14 @@
  */
 
 using System.Collections.Generic;
-namespace Poly2Tri {
+namespace Poly2Tri.Unity {
 	/*
 	 * Extends the PointSet by adding some Constraints on how it will be triangulated<br>
 	 * A constraint defines an edge between two points in the set, these edges can not
 	 * be crossed. They will be enforced triangle edges after a triangulation.
 	 * <p>
-	 * 
-	 * 
+	 *
+	 *
 	 * @author Thomas Åhlén, thahlen@gmail.com
 	 */
 	public class ConstrainedPointSet : PointSet {
