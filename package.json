@@ -1,0 +1,8 @@
+{
+  "name": "com.trackman.poly2tri",
+  "description": "2D constrained Delaunay triangulation library.",
+  "displayName": "Poly2Tri (Mason Green, Thomas Åhlén, Michael Rickert)",
+  "documentationUrl": "https://github.com/MaulingMonkey/poly2tri-cs",
+  "version": "1.0.0",
+  "unity": "2022.3"
+}
