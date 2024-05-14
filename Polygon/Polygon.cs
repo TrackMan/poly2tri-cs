@@ -54,21 +54,16 @@ namespace Poly2Tri.Unity {
 		/// Create a polygon from a list of at least 3 points with no duplicates.
 		/// </summary>
 		/// <param name="points">A list of unique points</param>
-		public Polygon( IList<PolygonPoint> points ) {
-			if (points.Count < 3) throw new ArgumentException("List has fewer than 3 points", "points");
+		public Polygon( IEnumerable<PolygonPoint> points ) {
 
+			// Let's not do any sanity checks because they are too expensive...
+            //if (points.Count < 3) throw new ArgumentException("List has fewer than 3 points", "points");
 			// Lets do one sanity check that first and last point hasn't got same position
 			// Its something that often happen when importing polygon data from other formats
-			if (points[0].Equals(points[points.Count - 1])) points.RemoveAt(points.Count - 1);
+            //if (points[0].Equals(points[points.Count - 1])) points.RemoveAt(points.Count - 1);
 
-			_points.AddRange(points.Cast<TriangulationPoint>());
+			_points.AddRange(points);
 		}
-
-		/// <summary>
-		/// Create a polygon from a list of at least 3 points with no duplicates.
-		/// </summary>
-		/// <param name="points">A list of unique points.</param>
-		public Polygon( IEnumerable<PolygonPoint> points ): this( (points as IList<PolygonPoint>) ?? points.ToArray() ) {}
 
 		/// <summary>
 		/// Create a polygon from a list of at least 3 points with no duplicates.
@@ -83,7 +78,7 @@ namespace Poly2Tri.Unity {
 			_steinerPoints.Add(point);
 		}
 
-		public void AddSteinerPoints( List<TriangulationPoint> points ) {
+		public void AddSteinerPoints( IEnumerable<TriangulationPoint> points ) {
 			if (_steinerPoints == null) _steinerPoints = new List<TriangulationPoint>();
 			_steinerPoints.AddRange(points);
 		}
